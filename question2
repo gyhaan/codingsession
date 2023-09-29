@@ -1,0 +1,9 @@
+#!/bin/bash
+num1=$((RANDOM))
+num2=$((RANDOM))
+square1=$(echo "sqrt($num1)" | bc)
+square2=$(echo "sqrt($num2)" | bc)
+sum=$(echo "(( $square1 + $square2 ))" | bc)
+echo -e "The first random number is $num1\nThe square root is $square1"
+echo -e "The second random number is $num2\nThe square root is $square2"
+echo "The sum of their squares is $sum"
