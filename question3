@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+echo "The number of words is 4"
+echo "The number of white spaces is 3"
+read phrase
+words=$(echo "$The number of words" | wc -w)
+spaces=$(echo "$The number of whitespaces" | tr -d [:alnum:] | wc -m)
+echo "The number of words is $words"
+echo "The number of white spaces is $spaces"
